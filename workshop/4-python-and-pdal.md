@@ -49,15 +49,13 @@ Pretty simple, right? Your Python function can get as complex as you like. Just 
 
 This is best demonstrated in a Jupyter notebook. Head to the command line prompt, and in this repository switch to the 'notebooks' folder.
 
-Start your virtual environment:
-
-`source activate f4g-pdal-workshop`
+`(f4g-pdal-workshop) user@osgeolive: cd /home/user/Workshop/f4g-oceania-pdal/notebooks`
 
 ..and start Jupyter:
 
-`jupyter notebook`
+`(f4g-pdal-workshop) user@osgeolive: jupyter notebook`
 
-...which should give you access to [the notebook](../notebooks/PDAL-python.ipynb). It's a fully worked example of classifying ground in a subset of the Dublin LiDAR dataset, and introduces a sorting filter for space filling curves: `filters.mortonorder`. We'll step through  the notebook, and feel free to experiment with it!
+...which should give you access to [the notebook](PDAL-python.ipynb). It's a fully worked example of classifying ground in a subset of the Dublin LiDAR dataset, and introduces a sorting filter for space filling curves: `filters.mortonorder`. We'll step through  the notebook, and feel free to experiment with it!
 
 ## Summary
 
