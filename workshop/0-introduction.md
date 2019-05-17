@@ -12,17 +12,32 @@ In this workshop we will learn by doing - it'll be a bit of a magical mystery to
 
 ## Getting started
 
-If you haven't already, open a command line window (if you can use bash, great!) and do:
+Workshop is based on OSGeoLive12 just because is the generic platform used for SIGLibre worksops, but most of the this workshop will run inside a Anaconda/Conda or Docker environment. The virtualmachine of the workshop is prepared with Anaconda environment and some docker images installed.
 
-`git pull https://github.com/adamsteer/f4g-oceania-pdal.git`
+### Conda setup
 
-...and:
+Most of the workshop will be executed in Terminal where we will activate the conda environonment and related workshop virtual environment. Follow these steps to activate the workshop environment.
 
-`cd f4g-oceania-pdal`
+`user@osgeolive:~$ cd`
+`user@osgeolive:~$ source ./anaconda3/bin/activate`
+`(base) user@osgeolive:~$ conda activate f4g-pdal-workshop`
+`(f4g-pdal-workshop) user@osgeolive:~$`
 
-If you haven't already, please download a few sample datasets from here:
+### Clone workshop material
 
-...and move them to the directory `f4g-oceania-pdal/sample-data`
+Workshop material is already cloned at:
+
+`/home/user/Workshop/f4g-oceania-pdal`
+
+If you need to replicate at home, open a command line window (if you can use bash, great!) and do:
+
+`git pull https://github.com/luipir/f4g-oceania-pdal.git`
+
+that is a fork of `https://github.com/adamsteer/f4g-oceania-pdal.git` with the agreement of the author.
+
+sample datasets is at:
+
+`/home/user/Workshop/sample-data`
 
 All of our exercises today are run from there.
 
