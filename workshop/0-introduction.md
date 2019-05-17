@@ -14,6 +14,12 @@ In this workshop we will learn by doing - it'll be a bit of a magical mystery to
 
 Workshop is based on OSGeoLive12 just because is the generic platform used for SIGLibre worksops, but most of the this workshop will run inside a Anaconda/Conda or Docker environment. The virtualmachine of the workshop is prepared with Anaconda environment and some docker images installed.
 
+VirtualBox VM can be downloaded from: 
+
+https://mega.nz/#!RQREgYyY with key `4neDT5Gv1dwjzrV_4KT9fLp0e3FuKBy9I5fhIk5pQJA`
+
+VM will be available for a month after the workshop and then removed!
+
 ### Conda setup
 
 Most of the workshop will be executed in Terminal where we will activate the conda environonment and related workshop virtual environment. Follow these steps to activate the workshop environment.
