@@ -70,6 +70,22 @@ It has no classification labels! Let's try to fix that. Create a file 'rpas-grou
     {
       "type":"filters.outlier"
     },
+    #################################################
+    # due to https://github.com/PDAL/PDAL/issues/2275
+    # not necessary in pdal 1.9
+    {
+        "type": "filters.ferry",
+        "dimensions": "=>ReturnNumber, =>NumberOfReturns" 
+    },
+    {
+        "type": "filters.assign",
+        "assignment": "NumberOfReturns[:]=1"
+    },
+    {
+        "type": "filters.assign",
+        "assignment": "ReturnNumber[:]=1"
+    },
+    #################################################
     {
       "type":"filters.smrf"
     },
@@ -132,6 +148,22 @@ Let's modify our pipeline a little to remove the final filter, and write out the
     {
         "type":"filters.outlier"
     },
+    #################################################
+    # due to https://github.com/PDAL/PDAL/issues/2275
+    # not necessary in pdal 1.9
+    {
+        "type": "filters.ferry",
+        "dimensions": "=>ReturnNumber, =>NumberOfReturns" 
+    },
+    {
+        "type": "filters.assign",
+        "assignment": "NumberOfReturns[:]=1"
+    },
+    {
+        "type": "filters.assign",
+        "assignment": "ReturnNumber[:]=1"
+    },
+    #################################################
     {
         "type":"filters.smrf",
         "ignore":"Classification[7:7]"
@@ -183,6 +215,22 @@ Many end uses of point cloud data are not points at all - but rasters or other d
     {
         "type":"filters.outlier"
     },
+    #################################################
+    # due to https://github.com/PDAL/PDAL/issues/2275
+    # not necessary in pdal 1.9
+    {
+        "type": "filters.ferry",
+        "dimensions": "=>ReturnNumber, =>NumberOfReturns" 
+    },
+    {
+        "type": "filters.assign",
+        "assignment": "NumberOfReturns[:]=1"
+    },
+    {
+        "type": "filters.assign",
+        "assignment": "ReturnNumber[:]=1"
+    },
+    #################################################
     {
         "type":"filters.smrf",
         "ignore":"Classification[7:7]",
