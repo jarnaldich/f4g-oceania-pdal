@@ -18,7 +18,8 @@ Both formats create many very small files - which is OK for object storage, less
 
 This is actually really easy using dockerised entwine. Taking our RPAS farm sample, try:
 
-`docker run -it -v $(pwd):/opt/data connormanning/entwine build -i /opt/data/APPF-ground-smrf-allthepoints.laz -o /opt/data/appf-ground-sample`
+`cd /home/user/Workshop/sample-data`
+`docker run -u 1000:1000 -it -v $(pwd):/opt/data connormanning/entwine build -i /opt/data/APPF-ground-smrf-allthepoints.laz -o /opt/data/appf-ground-sample`
 
 While that's running - entwine builds can also be configured with a simple JSON file, for example:
 
@@ -31,7 +32,7 @@ While that's running - entwine builds can also be configured with a simple JSON 
 
 ...saved as `web-mercator.json` and run as:
 
-`docker run -it -v $(pwd):/opt/data connormanning/entwine build -c /opt/data/web-mercator.json -i /opt/data/APPF-ground-smrf-allthepoints.laz -o /opt/data/appf-ground-sample-webmercator`
+`docker run -u 1000:1000 -it -v $(pwd):/opt/data connormanning/entwine build -c /opt/data/web-mercator.json -i /opt/data/APPF-ground-smrf-allthepoints.laz -o /opt/data/appf-ground-sample-webmercator`
 
 ...would run entwine using 6 threads, and reproject the index to web mercator (EPSG:3857).
 
