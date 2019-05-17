@@ -53,7 +53,7 @@ An EPT resource can be inspected on the filesystem where it is created. Navigate
 
 Once you've created an Entwine index, start a web server in the directory you're working in:
 
-`python /<path to>/f4g-oceania-pdal/resources/simplecorsserver.py 9001`
+`python3 /<path to>/f4g-oceania-pdal/resources/simplecorsserver.py 9001`
 
 ...and navigate to http://potree.entwine.io. Modify the URL to something like:
 
