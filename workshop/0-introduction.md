@@ -22,7 +22,9 @@ VM will be available for a month after the workshop and then removed!
 
 ### Conda setup
 
-Most of the workshop will be executed in Terminal where we will activate the conda environonment and related workshop virtual environment. Follow these steps to activate the workshop environment.
+Most of the workshop will be executed in Terminal where we will activate the conda environonment and related workshop virtual environment.
+The reason to run all warkshop in virtual env is because I need QGIS installed in Conda environment to allow QGIS using the same PAL and python interpreter.
+Follow these steps to activate the workshop environment.
 
 `user@osgeolive:~$ cd`
 `user@osgeolive:~$ source ./anaconda3/bin/activate`
