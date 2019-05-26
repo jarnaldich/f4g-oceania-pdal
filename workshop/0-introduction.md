@@ -20,20 +20,6 @@ https://mega.nz/#!RQREgYyY with key `4neDT5Gv1dwjzrV_4KT9fLp0e3FuKBy9I5fhIk5pQJA
 
 VM will be available for a month after the workshop and then removed!
 
-### Conda setup
-
-Most of the workshop will be executed in Terminal where we will activate the conda environonment and related workshop virtual environment.
-The reason to run all warkshop in virtual env is because I need QGIS installed in Conda environment to allow QGIS using the same PAL and python interpreter.
-Follow these steps to activate the workshop environment.
-
-`user@osgeolive:~$ cd`
-
-`user@osgeolive:~$ source ./anaconda3/bin/activate`
-
-`(base) user@osgeolive:~$ conda activate f4g-pdal-workshop`
-
-`(f4g-pdal-workshop) user@osgeolive:~$`
-
 ### Clone workshop material
 
 Workshop material is already cloned at:
@@ -51,6 +37,20 @@ sample datasets is at:
 `/home/user/Workshop/sample-data`
 
 All of our exercises today are run from there.
+
+### Conda setup
+
+Most of the workshop will be executed in Terminal where we will activate the conda environonment and related workshop virtual environment.
+The reason to run all warkshop in virtual env is because I need QGIS installed in Conda environment to allow QGIS using the same PAL and python interpreter.
+Follow these steps to activate the workshop environment.
+
+`user@osgeolive:~$ cd`
+
+`user@osgeolive:~$ source ./anaconda3/bin/activate`
+
+`(base) user@osgeolive:~$ conda activate f4g-pdal-workshop`
+
+`(f4g-pdal-workshop) user@osgeolive:~$`
 
 ## Questions and feedback
 
