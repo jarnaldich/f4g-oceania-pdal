@@ -27,8 +27,11 @@ The reason to run all warkshop in virtual env is because I need QGIS installed i
 Follow these steps to activate the workshop environment.
 
 `user@osgeolive:~$ cd`
+
 `user@osgeolive:~$ source ./anaconda3/bin/activate`
+
 `(base) user@osgeolive:~$ conda activate f4g-pdal-workshop`
+
 `(f4g-pdal-workshop) user@osgeolive:~$`
 
 ### Clone workshop material
